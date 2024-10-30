@@ -1,0 +1,105 @@
+/**
+ * Better Comments Reply Manager admin styles.
+ *
+ * Loaded on all admin pages.
+ */
+
+/**
+ * Comments page.
+ *
+ * @since 1.0.0
+ */
+.bcrm-item {
+	list-style-type: none;
+}
+
+.bcrm-item:before {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	font-size: 16px;
+	line-height: 1;
+	font-family: dashicons;
+	text-decoration: inherit;
+	font-weight: 400;
+	font-style: normal;
+	vertical-align: top;
+	text-align: center;
+	-webkit-transition: color .1s ease-in 0;
+	transition: color .1s ease-in 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin-right: 5px;
+	position: relative;
+	top: 1px;
+}
+
+.bcrm-not-marked:before {
+	content: "\f154";
+}
+
+.bcrm-marked-as-not-needing-reply:before {
+	content: "\f147";
+}
+
+.bcrm-marked-as-needing-reply:before {
+	content: "\f534";
+}
+
+.bcrm-comment-by-author:before {
+	content: "\f110";
+}
+
+.bcrm-author-has-replied:before {
+	content: "\f110";
+}
+
+.bcrm-author-has-not-replied:before {
+	content: "\f534";
+}
+
+.bcrm-user-has-replied:before {
+	content: "\f464";
+}
+
+/**
+ * Comment classes.
+ *
+ * @since   1.0.0
+ */
+.bcrm_marked_as_needing_reply .bcrm_mark_as_needs_reply {
+	display: none;
+}
+
+.bcrm_marked_as_not_needing_reply .bcrm_mark_as_does_not_need_reply {
+	display: none;
+}
+
+.bcrm_not_marked .bcrm_mark_as_does_not_need_reply {
+	display: none;
+}
+
+/**
+ * Edit Comment page.
+ *
+ * @since   1.0.0
+ */
+#comment-reply-status-title {
+	font-size: 13px;
+	padding: 8px 12px;
+	margin: 0;
+	line-height: 1.4;
+}
+
+#comment-reply-status-radio p {
+	margin: 3px 0 5px;
+}
+
+#comment-reply-status-radio input {
+	margin: 2px 3px 5px 0;
+	vertical-align: middle;
+}
+
+#comment-reply-status-radio label {
+	padding: 5px 0;
+}
